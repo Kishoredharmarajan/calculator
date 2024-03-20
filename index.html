@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 50px; text-align: center;">Calculator</h1>
+   <div class="calculator">
+    <div class="inputbox">
+    <label for="" style="color: black;">Number1&nbsp;:&nbsp;</label>
+    <input type="number" value="" id="n1" placeholder="Enter the num1"><br>
+    <label for=""  style="color: black;">Number2&nbsp;:&nbsp;</label>
+    <input type="number" value="" id="n2" placeholder="Enter the num2"><br>
+    <h1 id="res" style="color: black;"></h1>
+    </div >
+    <div class="button1">
+        <input type="submit" value="ADD" onclick="addition()" id="a1">
+        <input type="submit" value="SUB" onclick="substraction()" id="a2">
+    </div>
+    <div class="button2">
+        <input type="submit" value="MUL" onclick="multiplication()" id="a3">
+        <input type="submit" value="DIV" onclick="division()" id="a4">
+    </div>
+   </div>
+
+
+   <script>
+    function addition()
+{
+    var a = parseInt(document.getElementById("n1").value);
+    var b = parseInt(document.getElementById("n2").value);
+    document.getElementById("res").textContent = a+b;
+}
+
+function substraction()
+{
+    var a = parseInt(document.getElementById("n1").value);
+    var b = parseInt(document.getElementById("n2").value);
+    document.getElementById("res").textContent = a-b;
+}
+function multiplication()
+{
+    var a = parseInt(document.getElementById("n1").value);
+    var b = parseInt(document.getElementById("n2").value);
+    document.getElementById("res").textContent = a*b;
+}
+function division()
+{
+    var a = parseInt(document.getElementById("n1").value);
+    var b = parseInt(document.getElementById("n2").value);
+    document.getElementById("res").textContent = a/b;
+}
+   </script>
+</body>
+</html>
